@@ -1,8 +1,14 @@
 {
-    "name": "barryvdh/elfinder-flys-driver",
+    "name": "onnov/elfinder-flysystem-driver",
     "description": "A Flysystem Driver for elFinder",
     "license": "MIT",
     "keywords": ["elfinder", "flysystem", "filesystem"],
+    "authors": [
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.4|^8.0",
         "studio-42/elfinder": "^2.1.60",
