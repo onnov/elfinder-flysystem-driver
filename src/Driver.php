@@ -231,7 +231,7 @@ class Driver extends elFinderVolumeDriver
             }
         } else {
             // If not exists, return empty
-            if (!$this->fs->has($path)) {
+            if (!$this->fs->fileExists($path)) {
 
                 // Check if the parent doesn't have this path
                 if ($this->_dirExists($path)) {
