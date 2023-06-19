@@ -843,6 +843,11 @@ class Driver extends elFinderVolumeDriver
                 return $this->options['URLCallback']($path);
             }
 
+            if (($customPrefix = $this->options['URL']) && !empty($customPrefix)) {
+                // do not propagate into parent method cutting first character and forming invalid URL
+                return $this->_normpath($customPrefix) . $path;
+            }
+
             return parent::getContentUrl($hash, $options);
         }
         return $file['url'];
